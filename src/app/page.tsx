@@ -1,5 +1,6 @@
 import Avatar from "./components/Avatar";
 import Projects from "./components/Projects";
+import Stack from "./components/Stack";
 
 export default function Home() {
   return (
@@ -19,17 +20,24 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full text-center">
+          <div className="w-full text-center space-x-4">
             <a
               href="#projects"
               className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition transform hover:scale-105 motion-reduce:transform-none"
             >
               Ver Proyectos
             </a>
+            <a
+              href="#stack"
+              className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition transform hover:scale-105 motion-reduce:transform-none"
+            >
+              Ver Stack
+            </a>
           </div>
         </main>
       </div>
       <Projects />
+      <Stack />
     </>
   );
 }
