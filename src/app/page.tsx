@@ -1,5 +1,5 @@
 import Avatar from "./components/Avatar";
-import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import Stack from "./components/Stack";
 
 export default function Home() {
@@ -15,29 +15,37 @@ export default function Home() {
               </h1>
               <p className="text-lg md:text-xl mt-4 text-gray-600">
                 Desarrollador Fullstack experimentado en creación de
-                aplicaciones web..
+                aplicaciones web. <br />
+                Apasionado por la tecnología y la resolución de problemas.
               </p>
             </div>
           </div>
 
           <div className="w-full text-center space-x-4">
-            <a
+            {/* <a
               href="#projects"
               className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition transform hover:scale-105 motion-reduce:transform-none"
             >
               Ver Proyectos
-            </a>
+            </a> */}
             <a
               href="#stack"
               className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition transform hover:scale-105 motion-reduce:transform-none"
             >
               Ver Stack
             </a>
+            <a
+              href="#contact"
+              className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition transform hover:scale-105 motion-reduce:transform-none"
+            >
+              Contacto
+            </a>
           </div>
         </main>
       </div>
-      <Projects />
+      {/* <Projects /> */}
       <Stack />
+      <Contact />
     </>
   );
 }
