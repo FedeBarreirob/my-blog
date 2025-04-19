@@ -19,9 +19,7 @@ export const metadata: Metadata = {
   description: "Portfolio de Federico Barreiro",
 };
 
-export default async function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode; params: { locale: string } }>) {
+export default async function RootLayout({children}: Readonly<{ children: React.ReactNode }>) {
   const locale = await getLocale();
 
   return (
@@ -30,7 +28,6 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider>
-          {/* <Navbar /> */}
           {children}
         </NextIntlClientProvider>
       </body>
