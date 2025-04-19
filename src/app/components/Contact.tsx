@@ -1,16 +1,15 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function Contact() {
+  const t = useTranslations("");
   return (
     <section
       id="contact"
       className="w-full min-h-screen py-20 px-4 md:px-16 backdrop-blur-md text-white"
     >
-      <h2 className="text-3xl font-bold mb-8">Contacto</h2>
-      <p className="mb-8 text-gray-300">
-        ¿Querés que trabajemos juntos? No dudes en escribirme o encontrarme en
-        redes.
-      </p>
+      <h2 className="text-3xl font-bold mb-8">{t("CONTACT")}</h2>
+      <p className="mb-8 text-gray-300">{t("WORK_TOGETHER")}</p>
 
       <form
         action="https://formsubmit.co/fede.bdev@gmail.com"
@@ -20,21 +19,21 @@ export default function Contact() {
         <input
           type="text"
           name="name"
-          placeholder="Tu nombre"
+          placeholder={t("YOUR_NAME")}
           required
           className="p-3 rounded bg-white/10 backdrop-blur-md border border-white/20 text-white"
         />
         <input
           type="email"
           name="email"
-          placeholder="Tu email"
+          placeholder={t("YOUR_EMAIL")}
           required
           className="p-3 rounded bg-white/10 backdrop-blur-md border border-white/20 text-white"
         />
         <textarea
           name="message"
           rows={5}
-          placeholder="Tu mensaje"
+          placeholder={t("YOUR_MESSAGE")}
           required
           className="p-3 rounded bg-white/10 backdrop-blur-md border border-white/20 text-white"
         />
@@ -42,7 +41,7 @@ export default function Contact() {
           type="submit"
           className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded transition transform hover:scale-105"
         >
-          Enviar
+          {t("SEND")}
         </button>
       </form>
 

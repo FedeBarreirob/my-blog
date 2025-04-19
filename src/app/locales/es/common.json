@@ -1,0 +1,22 @@
+{
+    "HI_IM_FEDERICO": "Hola, soy Federico",
+    "DESCRIPTION_TEXT": "Desarrollador Fullstack experimentado en creación de aplicaciones web.Apasionado por la tecnología y la resolución de problemas.",
+    "SEE_PROJECTS": "Ver Proyectos",
+    "SEE_STACK": "Ver Stack",
+    "CONTACT": "Contacto",
+    "YOUR_NAME": "Nombre",
+    "YOUR_EMAIL": "Email",
+    "YOUR_MESSAGE": "Mensaje",
+    "SEND": "Enviar",
+    "DATABASES":"Bases de Datos",
+    "FULLSTACK_DEVELOPER":"Desarrollador Fullstack",
+    "FRONTEND_DEVELOPER":"Desarrollador Frontend",
+    "OWNER":"Creador",
+    "MISC":"Misceláneo",
+    "WORK_TOGETHER":"¿Querés que trabajemos juntos? No dudes en escribirme o contáctame en redes.",
+    "PROJECTS_I_WORKED":"Algunos de los proyectos en los que he trabajado",
+    "DESCRIPTION_POWERMATE":"Empresa especializada en soluciones de Gestión Energética para la optimización y reducción del consumo de energía eléctrica. La plataforma permite a los usuarios gestionar su consumo energético mediante un sistema de gestión de energía, que incluye la posibilidad de visualizar el consumo, recibir alertas y reportes, y gestionar la infraestructura eléctrica.",
+    "DESCRIPTION_SYNDENO": "Plataforma que ofrece a empresas servicios de gestión de infraestructura para su propio software. Mediante una aplicación, el usuario es capaz de ver su información y cluster de Kubernetes, como también configurar y desplegar sus aplicaciones.",
+    "DESCRIPTION_SILOHUB":"Solución integral para digitalizar el relacionamiento de los acopios, cooperativas y agronomías con sus clientes productores. La plataforma contempla funciones de auto consulta de información, gestión transaccional de los negocios de granos e insumos, soluciones de pago y más.",
+    "DESCRIPTION_DIVIDENDO":"Aplicación para gestionar y dividir gastos fácilmente. Ideal para viajes, reuniones con amigos, eventos y más."
+}

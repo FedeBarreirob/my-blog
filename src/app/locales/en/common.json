@@ -1,0 +1,22 @@
+{
+    "HI_IM_FEDERICO": "Hi, I'm Federico",
+    "DESCRIPTION_TEXT": "Fullstack developer with experience in creating web applications. Passionate about technology and problem solving.",
+    "SEE_PROJECTS": "See projects",
+    "SEE_STACK": "See Stack",
+    "CONTACT": "Contact",
+    "YOUR_NAME": "Name",
+    "YOUR_EMAIL": "Email",
+    "YOUR_MESSAGE": "Message",
+    "SEND": "Send",
+    "DATABASES": "Databases",
+    "FULLSTACK_DEVELOPER": "Fullstack Developer",
+    "FRONTEND_DEVELOPER": "Frontend Developer",
+    "OWNER": "Owner",
+    "MISC": "Miscellaneous",
+    "WORK_TOGETHER":"Do you want to work together? Don't hesitate to write me or contact me on social networks.",
+    "PROJECTS_I_WORKED":"Some projects I worked on",
+    "DESCRIPTION_POWERMATE":"Company specialized in Energy Management solutions for the optimization and reduction of power consumption. The platform allows users to manage their energy consumption through an energy management system, which includes the ability to visualize consumption, receive alerts and reports, and manage power infrastructure.",
+    "DESCRIPTION_SYNDENO":"Platform that offers companies infrastructure management services for their own software.Through an application, users can view their information and Kubernetes clusters, as well as configure and deploy their applications.",
+    "DESCRIPTION_SILOHUB":"An all-in-one solution to digitalize how grain elevators, cooperatives, and agronomy providers engage with their farmer clients. The platform offers self-service access to information, transactional management of grain and input businesses, integrated payment solutions, and more.",
+    "DESCRIPTION_DIVIDENDO":"App to easily manage and split expenses. Ideal for trips, gatherings with friends, events, and more."
+}
