@@ -29,19 +29,20 @@ export default function Home() {
           <div className="w-full text-center space-x-4">
             <a
               href="#projects"
-              className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition transform hover:scale-105 motion-reduce:transform-none"
+              className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-blue-500/10 text-blue-400 border border-blue-500/30 rounded-xl font-medium hover:bg-blue-500/20 hover:text-blue-300 transition-all duration-300"
             >
               {t("SEE_PROJECTS")}
             </a>
+
             <a
               href="#stack"
-              className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition transform hover:scale-105 motion-reduce:transform-none"
+              className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-blue-500/10 text-blue-400 border border-blue-500/30 rounded-xl font-medium hover:bg-blue-500/20 hover:text-blue-300 transition-all duration-300"
             >
               {t("SEE_STACK")}
             </a>
             <a
               href="#contact"
-              className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition transform hover:scale-105 motion-reduce:transform-none"
+              className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-blue-500/10 text-blue-400 border border-blue-500/30 rounded-xl font-medium hover:bg-blue-500/20 hover:text-blue-300 transition-all duration-300"
             >
               {t("CONTACT")}
             </a>

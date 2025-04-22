@@ -41,8 +41,7 @@ export default function ProjectCard({
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-fit mx-auto md:mx-0 mt-4 px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300 shadow-sm hover:scale-105 motion-reduce:transform-none"
-          >
+            className="w-fit mt-6 inline-flex items-center gap-2 px-6 py-3 bg-blue-500/10 text-blue-400 border border-blue-500/30 rounded-xl font-medium hover:bg-blue-500/20 hover:text-blue-300 transition-all duration-300"          >
             Ver Proyecto
           </a>
         </div>

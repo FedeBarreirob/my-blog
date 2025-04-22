@@ -1,13 +1,19 @@
-'use client'
+'use client';
 import { useEffect, useState } from "react";
 
 export const useLanguage = () => {
-    const savedLanguage = localStorage?.getItem('language') || 'en';
-    const [language,setLanguage] = useState(savedLanguage);
+  const [language, setLanguage] = useState<'en' | 'es'>('en');
 
-    useEffect(() => {
-        localStorage.setItem('language', language);
-    }, [language]);
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('language');
+    if (savedLanguage) {
+      setLanguage(savedLanguage as 'en' | 'es');
+    }
+  }, []);
 
-    return {language, setLanguage};
-}
+  useEffect(() => {
+    localStorage.setItem('language', language);
+  }, [language]);
+
+  return { language, setLanguage };
+};

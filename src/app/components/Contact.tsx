@@ -39,7 +39,7 @@ export default function Contact() {
         />
         <button
           type="submit"
-          className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded transition transform hover:scale-105"
+          className="cursor-pointer mt-6 items-center gap-2 px-6 py-3 bg-blue-500/10 text-blue-400 border border-blue-500/30 rounded-xl font-medium hover:bg-blue-500/20 hover:text-blue-300 transition-all duration-300"
         >
           {t("SEND")}
         </button>
