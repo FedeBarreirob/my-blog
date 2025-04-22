@@ -22,7 +22,7 @@ export default function SwitchLanguage() {
         <Image
           src={`/icons/${getFlagIcon(language)}.svg`}
           alt={language}
-          className="object-contain cursor-pointer"
+          className="object-contain cursor-pointer hover:scale-110 transition-all duration-300"
           width={40}
           height={40}
           onClick={() => toggleLanguage(language)}
