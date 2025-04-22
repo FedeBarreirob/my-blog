@@ -1,4 +1,5 @@
 import { Project } from "@/app/types/project";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function ProjectCard({
@@ -8,6 +9,7 @@ export default function ProjectCard({
   project: Project;
   index: number;
 }) {
+  const t = useTranslations("");
   return (
     <div
       className={`w-full flex ${
@@ -41,8 +43,9 @@ export default function ProjectCard({
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-fit mt-6 inline-flex items-center gap-2 px-6 py-3 bg-blue-500/10 text-blue-400 border border-blue-500/30 rounded-xl font-medium hover:bg-blue-500/20 hover:text-blue-300 transition-all duration-300"          >
-            Ver Proyecto
+            className="w-fit mt-6 inline-flex items-center gap-2 px-6 py-3 bg-blue-500/10 text-blue-400 border border-blue-500/30 rounded-xl font-medium hover:bg-blue-500/20 hover:text-blue-300 transition-all duration-300"
+          >
+            {t("SEE_PROJECT")}
           </a>
         </div>
       </div>
