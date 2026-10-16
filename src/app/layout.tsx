@@ -7,7 +7,10 @@ import { getLocale } from "next-intl/server";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0A0A0A",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fafaf9" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+  ],
 };
 
 const geistSans = Geist({
@@ -35,11 +38,6 @@ export const metadata: Metadata = {
     "max-video-preview": -1,
     googleBot: "index, follow",
   },
-  alternates: {
-    types: {
-      "application/rss+xml": "https://www.federicobarreiro.com/rss.xml",
-    },
-  },
   applicationName: "Federico Barreiro",
   appleWebApp: {
     title: "Federico Barreiro",
@@ -47,18 +45,8 @@ export const metadata: Metadata = {
     capable: true,
   },
   icons: {
-    icon: [
-      {
-        url: "/public/icon.ico",
-        type: "image/x-icon",
-      }
-    ],
-    shortcut: [
-      {
-        url: "/public/icon.ico",
-        type: "image/x-icon",
-      },
-    ],
+    icon: [{ url: "/icon.ico", type: "image/x-icon" }],
+    shortcut: [{ url: "/icon.ico", type: "image/x-icon" }],
   },
 };
 
@@ -69,8 +57,8 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <link rel="icon" href="/icon.ico" />
       <body
+        suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider>{children}</NextIntlClientProvider>

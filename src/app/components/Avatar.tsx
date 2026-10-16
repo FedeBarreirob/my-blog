@@ -1,10 +1,17 @@
 import Image from "next/image";
 
 export default function Avatar() {
-  const image = "/me.png";
   return (
-    <div className="w-[180px] h-[180px] rounded-full overflow-hidden shadow-lg">
-      <Image src={image} alt="an image of me" width={180} height={180} priority />
+    <div className="h-36 w-36 shrink-0 overflow-hidden rounded-full ring-2 ring-line sm:h-44 sm:w-44">
+      <Image
+        src="/me.png"
+        alt="Portrait of Federico Barreiro"
+        width={176}
+        height={176}
+        sizes="(min-width: 640px) 176px, 144px"
+        className="h-full w-full object-cover"
+        priority
+      />
     </div>
   );
 }

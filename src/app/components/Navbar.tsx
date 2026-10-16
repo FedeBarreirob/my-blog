@@ -1,29 +1,38 @@
-'use client'
-import Link from 'next/link'
+import { useTranslations } from "next-intl";
+import SwitchLanguage from "./SwitchLanguage";
 
 const links = [
-  { name: 'Inicio', href: '#' },
-  { name: 'Sobre mí', href: '#about' },
-  { name: 'Proyectos', href: '#projects' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Contacto', href: '#contact' },
-]
+  { key: "NAV_PROJECTS", href: "#projects" },
+  { key: "NAV_CONTACT", href: "#contact" },
+];
 
 export default function Navbar() {
+  const t = useTranslations("");
   return (
-    <nav className="fixed top-0 w-full bg-white shadow z-50">
-      <div className="flex justify-between items-center px-6 py-4">
-        <span className="font-bold text-lg">MiPortfolio</span>
-        <ul className="flex gap-6">
-          {links.map((link) => (
-            <li key={link.href}>
-              <Link href={link.href} className="hover:text-blue-600 transition">
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </nav>
-  )
+    <header className="sticky top-0 z-50 border-b border-line bg-background/80 backdrop-blur-md">
+      <nav
+        aria-label={t("NAV_LABEL")}
+        className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3 sm:px-6"
+      >
+        <a href="#top" className="hidden font-semibold tracking-tight sm:inline">
+          FB
+        </a>
+        <div className="flex items-center gap-3 sm:gap-6">
+          <ul className="flex items-center gap-3 text-xs text-muted sm:gap-6 sm:text-sm">
+            {links.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="transition-colors hover:text-foreground"
+                >
+                  {t(link.key)}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <SwitchLanguage />
+        </div>
+      </nav>
+    </header>
+  );
 }

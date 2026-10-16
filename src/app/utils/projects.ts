@@ -1,12 +1,22 @@
 import { Project } from "@/app/types/project";
 
 export const getProjects = (t: (key: string) => string): Project[] => {
+    const PROWINCH: Project = {
+        title: "Prowinch",
+        image: "/prowinch_logo.png",
+        description: t("DESCRIPTION_PROWINCH"),
+        rol: t("SOFTWARE_ENGINEER"),
+        link: 'https://www.linkedin.com/company/prowinchworldwide/',
+        tech: ["Next.js", "Node.js", "SSR", "Core Web Vitals"]
+    };
+
     const POWERMATE: Project = {
         title: "Powermate",
-        image: "/powermeter_logo.jpg",
+        image: "/powermate_logo.svg",
         description: t("DESCRIPTION_POWERMATE"),
         rol: t("FRONTEND_DEVELOPER"),
-        link: 'https://powermate.powermeter.com.ar/demo/general'
+        link: 'https://powermate.powermeter.com.ar/demo/general',
+        tech: ["React.js"]
     };
 
     const SILOHUB: Project = {
@@ -14,7 +24,8 @@ export const getProjects = (t: (key: string) => string): Project[] => {
         image: "/silohub_logo.jpg",
         description: t("DESCRIPTION_SILOHUB"),
         rol: t("FULLSTACK_DEVELOPER"),
-        link: 'https://pwa-portal-qa.silohub.ag/'
+        link: 'https://pwa-portal-qa.silohub.ag/',
+        tech: ["Angular", "Java", "Microservices", "Deployment automation"]
     };
 
     const SYNDENO: Project = {
@@ -22,16 +33,9 @@ export const getProjects = (t: (key: string) => string): Project[] => {
         image: "/syndeno_logo.png",
         description: t("DESCRIPTION_SYNDENO"),
         rol: t("FULLSTACK_DEVELOPER"),
-        link: 'https://syndeno.cloud/'
+        link: 'https://syndeno.cloud/',
+        tech: ["Angular", "Node.js", "AWS", "Cypress", "CI/CD"]
     };
 
-    const DIVIDENDO: Project = {
-        title: "Dividendo",
-        image: "/dividendo_logo.webp",
-        description: t("DESCRIPTION_DIVIDENDO"),
-        rol: t("OWNER"),
-        link: 'https://dividendo.site/'
-    };
-
-    return [POWERMATE, SYNDENO, SILOHUB, DIVIDENDO];
+    return [PROWINCH, POWERMATE, SYNDENO, SILOHUB];
 };

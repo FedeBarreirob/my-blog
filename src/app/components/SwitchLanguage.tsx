@@ -1,35 +1,20 @@
 "use client";
-import Image from "next/image";
-import { useLanguage } from "../hooks/useLanguage";
+import { useLocale, useTranslations } from "next-intl";
 import { setUserLocale } from "../services/lang";
 
 export default function SwitchLanguage() {
-  const { language, setLanguage } = useLanguage();
+  const locale = useLocale();
+  const t = useTranslations("");
+  const next = locale === "en" ? "es" : "en";
 
-  const toggleLanguage = (language: string) => {
-    const newLang = language === "en" ? "es" : "en";
-    setLanguage(newLang);
-    setUserLocale(newLang);
-  };
-
-  const getFlagIcon = (language: string) => {
-    return language === "en" ? "es" : "en";
-  }
-
-  const getFlag = (language: string) => {
-    return (
-      <div className="absolute top-4 right-4">
-        <Image
-          src={`/icons/${getFlagIcon(language)}.svg`}
-          alt={language}
-          className="object-contain cursor-pointer hover:scale-110 transition-all duration-300"
-          width={40}
-          height={40}
-          onClick={() => toggleLanguage(language)}
-        />
-      </div>
-    );
-  };
-
-  return <>{getFlag(language)}</>;
+  return (
+    <button
+      type="button"
+      onClick={() => setUserLocale(next)}
+      aria-label={t("SWITCH_LANGUAGE")}
+      className="cursor-pointer rounded-md border border-line px-2 py-1 text-xs font-medium uppercase tracking-wide text-muted transition-colors hover:border-accent hover:text-accent"
+    >
+      {next}
+    </button>
+  );
 }

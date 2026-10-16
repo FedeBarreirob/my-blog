@@ -4,4 +4,5 @@ export interface Project{
     image: string;
     rol: string;
     link: string;
+    tech: string[];
 }
